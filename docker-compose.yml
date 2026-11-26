@@ -1,0 +1,23 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    container_name: geomine-api
+    environment:
+      GEOMINE_BASE: /app
+      PYTHONUNBUFFERED: "1"
+    expose:
+      - "5000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    container_name: geomine-frontend
+    ports:
+      - "8081:80"
+    depends_on:
+      - api
+    restart: unless-stopped

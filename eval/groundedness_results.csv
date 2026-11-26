@@ -1,0 +1,22 @@
+﻿test_id,question,answer,grounded,http_success,automatic_check,failed_checks,manual_review_required,sources
+Q01,Tell me about R2,"Target R2 has a mean PU score of 0.8256, maximum PU score of 0.9652, area of 92.00 km², and 23 grid cells. Known deposit cells: 0. Mean PU percentile: 99.4457.",True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q02,Which target has the highest score?,"The highest mean PU score belongs to R1, with a mean score of 0.9273. Its area is 2492.00 km² and it contains 15 known deposit cells.",True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q03,How many targets are available?,The GeoMine dataset contains 11 refined target polygons.,True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q04,How many known deposits are in the targets?,"The target polygons contain 15 known deposit cells in total. By target: R1: 15, R2: 0, R3: 0, R4: 0, R5: 0, R6: 0, R7: 0, R8: 0, R9: 0, R10: 0, R11: 0. These are spatial overlaps with known deposit cells.",True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q05,Explain Grid FID 2,"Grid cell 2 has a PU ranking score of 0.9758 and a PU percentile of 99.8743%. Its component scores are Sources 64.2205, Energy 48.6725, Pathways 66.2254, and Deposition 2.6327. The lowest component is Deposition. Data completeness is 100.0%. Top geological drivers: P2a (Pathways), D2a (Energy), P1 (Pathways).",True,True,PASS,,True,"reports/cell_explanations.csv, grid_fid=2"
+Q06,Which target has the lowest score?,"The lowest mean PU score belongs to R11, with a mean score of 0.5896.",True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q07,Rank the targets by score,"Target ranking by mean PU score:
+1. R1: 0.9273
+2. R2: 0.8256
+3. R3: 0.8029
+4. R4: 0.7981
+5. R5: 0.7533
+6. R6: 0.7389
+7. R7: 0.7241
+8. R8: 0.7125
+9. R9: 0.6904
+10. R10: 0.6899
+11. R11: 0.5896",True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q08,How many known deposit cells does R2 contain?,"Target R2 has a mean PU score of 0.8256, maximum PU score of 0.9652, area of 92.00 km², and 23 grid cells. Known deposit cells: 0. Mean PU percentile: 99.4457.",True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q09,What is the area of R2?,"Target R2 has a mean PU score of 0.8256, maximum PU score of 0.9652, area of 92.00 km², and 23 grid cells. Known deposit cells: 0. Mean PU percentile: 99.4457.",True,True,PASS,,True,data/processed/pu_refined_target_polygons.gpkg
+Q10,What is the exact copper grade of R2?,"The available GeoMine project data does not contain the requested information, such as assay results, drilling records, mineral grades, or resource estimates. I cannot determine or estimate this value from the available dataset.",True,True,PASS,,True,GeoMine available project datasets

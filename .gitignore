@@ -1,0 +1,43 @@
+
+# Python environments and cache
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Frontend dependencies and builds
+app/node_modules/
+app/dist/
+
+# Large local dependencies
+ml_packages/
+
+# Raw source datasets
+data/raw/
+
+# Demo video - submit separately
+GeoMine_Demo.mp4
+
+# Local QGIS project and backups
+GeoMine.qgz
+*.qgz~
+*.qgs~
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Temporary files and logs
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/

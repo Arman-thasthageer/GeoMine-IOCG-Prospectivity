@@ -1,0 +1,30 @@
+@"
+BASELINE COMPARISON
+===================
+
+Grid cells: 112179
+Known deposit cells: 16
+
+OUR EXPERT-WEIGHTED BASELINE
+----------------------------
+Top 5 %  | Deposits captured: 15.0 / 16 | Capture rate: 93.75 %
+Top 10 % | Deposits captured: 15.0 / 16 | Capture rate: 93.75 %
+Top 20 % | Deposits captured: 15.0716 / 16 | Capture rate: 94.20 %
+
+GEOSCIENCE AUSTRALIA GA BASELINE
+--------------------------------
+Top 5 %  | Deposits captured: 14.0 / 16 | Capture rate: 87.50 %
+Top 10 % | Deposits captured: 15.0 / 16 | Capture rate: 93.75 %
+Top 20 % | Deposits captured: 16.0 / 16 | Capture rate: 100.00 %
+
+IMPORTANT NOTES
+---------------
+1. These are preliminary in-sample capture results, not independent predictive validation.
+2. The expert-weighted baseline performs better at the top 5%.
+3. Both baselines have equal capture at the top 10%.
+4. GA captures all known deposits at the top 20%.
+5. The expert-weighted top 20% result uses tie-aware fractional inclusion because many cells share the same score at the selection boundary.
+6. Spatial block cross-validation is still required before drawing conclusions about predictive performance.
+
+COMPARISON COMPLETED
+"@ | Set-Content -Path "C:\Users\Ermus\Desktop\GeoMine\reports\baseline_comparison.txt" -Encoding UTF8

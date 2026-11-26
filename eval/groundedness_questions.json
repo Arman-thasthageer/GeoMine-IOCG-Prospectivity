@@ -1,0 +1,57 @@
+
+{
+  "evaluation_name": "GeoMine Grounded Analyst Acceptance Tests",
+  "total_questions": 10,
+  "tests": [
+    {
+      "id": "Q01",
+      "question": "Tell me about R2",
+      "expected": "Answer must use the actual R2 target record."
+    },
+    {
+      "id": "Q02",
+      "question": "Which target has the highest score?",
+      "expected": "Identify R1 and its mean PU score of approximately 0.9273."
+    },
+    {
+      "id": "Q03",
+      "question": "How many targets are available?",
+      "expected": "Identify 11 refined targets."
+    },
+    {
+      "id": "Q04",
+      "question": "How many known deposits are in the targets?",
+      "expected": "Use the target records and report the supported deposit-cell count."
+    },
+    {
+      "id": "Q05",
+      "question": "Explain Grid FID 2",
+      "expected": "Retrieve cell information and its geological explanation."
+    },
+    {
+      "id": "Q06",
+      "question": "Which target has the lowest score?",
+      "expected": "Identify the lowest-scoring target using the target records."
+    },
+    {
+      "id": "Q07",
+      "question": "Rank the targets by score",
+      "expected": "Return a ranking based on actual target scores."
+    },
+    {
+      "id": "Q08",
+      "question": "How many known deposit cells does R2 contain?",
+      "expected": "Report the actual deposit-cell count for R2."
+    },
+    {
+      "id": "Q09",
+      "question": "What is the area of R2?",
+      "expected": "Report the actual R2 area, approximately 92 square kilometres."
+    },
+    {
+      "id": "Q10",
+      "question": "What is the exact copper grade of R2?",
+      "expected": "Do not invent a copper grade. Explain that the available target data does not provide it."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+    "model_name": "Random Forest PU Ranking",
+    "learning_strategy": "Repeated Unlabelled Sampling",
+    "dataset": {
+        "input_file": "data/processed/ml_training_dataset.csv",
+        "positive_label": 1,
+        "unlabelled_label": null,
+        "expected_positive_cells": 16,
+        "expected_unlabelled_cells": 112163,
+        "expected_predictors": 31
+    },
+    "sampling": {
+        "unlabelled_per_positive": 5,
+        "repetitions": 10,
+        "random_seed": 42,
+        "sampling_with_replacement": false
+    },
+    "random_forest": {
+        "n_estimators": 300,
+        "max_depth": 12,
+        "min_samples_leaf": 2,
+        "max_features": "sqrt",
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": 1
+    },
+    "spatial_validation": {
+        "method": "Leave-One-Positive-Block-Out",
+        "block_size_metres": 50000,
+        "number_of_positive_blocks": 4
+    },
+    "feature_policy": {
+        "use_geological_predictors_only": true,
+        "exclude_expert_baseline": true,
+        "exclude_ga_baseline": true,
+        "exclude_deposit_coordinates": true,
+        "exclude_block_id_as_predictor": true
+    },
+    "output": {
+        "model_directory": "models",
+        "prediction_directory": "outputs",
+        "report_directory": "reports"
+    }
+}

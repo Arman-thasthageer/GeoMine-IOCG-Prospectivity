@@ -1,0 +1,112 @@
+[
+    {
+        "test_id": "Q01",
+        "question": "Tell me about R2",
+        "answer": "Target R2 has a mean PU score of 0.8256, maximum PU score of 0.9652, area of 92.00 km², and 23 grid cells. Known deposit cells: 0. Mean PU percentile: 99.4457.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q02",
+        "question": "Which target has the highest score?",
+        "answer": "The highest mean PU score belongs to R1, with a mean score of 0.9273. Its area is 2492.00 km² and it contains 15 known deposit cells.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q03",
+        "question": "How many targets are available?",
+        "answer": "The GeoMine dataset contains 11 refined target polygons.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q04",
+        "question": "How many known deposits are in the targets?",
+        "answer": "The target polygons contain 15 known deposit cells in total. By target: R1: 15, R2: 0, R3: 0, R4: 0, R5: 0, R6: 0, R7: 0, R8: 0, R9: 0, R10: 0, R11: 0. These are spatial overlaps with known deposit cells.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q05",
+        "question": "Explain Grid FID 2",
+        "answer": "Grid cell 2 has a PU ranking score of 0.9758 and a PU percentile of 99.8743%. Its component scores are Sources 64.2205, Energy 48.6725, Pathways 66.2254, and Deposition 2.6327. The lowest component is Deposition. Data completeness is 100.0%. Top geological drivers: P2a (Pathways), D2a (Energy), P1 (Pathways).",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "reports/cell_explanations.csv, grid_fid=2"
+    },
+    {
+        "test_id": "Q06",
+        "question": "Which target has the lowest score?",
+        "answer": "The lowest mean PU score belongs to R11, with a mean score of 0.5896.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q07",
+        "question": "Rank the targets by score",
+        "answer": "Target ranking by mean PU score:\n1. R1: 0.9273\n2. R2: 0.8256\n3. R3: 0.8029\n4. R4: 0.7981\n5. R5: 0.7533\n6. R6: 0.7389\n7. R7: 0.7241\n8. R8: 0.7125\n9. R9: 0.6904\n10. R10: 0.6899\n11. R11: 0.5896",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q08",
+        "question": "How many known deposit cells does R2 contain?",
+        "answer": "Target R2 has a mean PU score of 0.8256, maximum PU score of 0.9652, area of 92.00 km², and 23 grid cells. Known deposit cells: 0. Mean PU percentile: 99.4457.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q09",
+        "question": "What is the area of R2?",
+        "answer": "Target R2 has a mean PU score of 0.8256, maximum PU score of 0.9652, area of 92.00 km², and 23 grid cells. Known deposit cells: 0. Mean PU percentile: 99.4457.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "data/processed/pu_refined_target_polygons.gpkg"
+    },
+    {
+        "test_id": "Q10",
+        "question": "What is the exact copper grade of R2?",
+        "answer": "The available GeoMine project data does not contain the requested information, such as assay results, drilling records, mineral grades, or resource estimates. I cannot determine or estimate this value from the available dataset.",
+        "grounded": true,
+        "http_success": true,
+        "automatic_check": "PASS",
+        "failed_checks": "",
+        "manual_review_required": true,
+        "sources": "GeoMine available project datasets"
+    }
+]

@@ -1,0 +1,4 @@
+﻿model,evaluation_scope,method,top_5_capture_percent,top_10_capture_percent,top_20_capture_percent,comparability_note
+Expert-weighted baseline,Full study area; in-sample,Tie-aware top-area capture,93.75,93.75,94.2,In-sample full-area baseline; not independent spatial validation.
+GA baseline,Full study area; in-sample,Top-area capture,87.5,93.75,100.0,In-sample full-area baseline; not independent spatial validation.
+PU Random Forest,Four held-out positive blocks only,Aggregated fold-wise tie-aware capture,18.75,50.0,75.0,Fold-wise capture within four held-out positive blocks; not directly comparable with full-area baselines.

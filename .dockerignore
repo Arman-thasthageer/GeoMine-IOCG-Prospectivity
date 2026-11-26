@@ -1,0 +1,14 @@
+.git
+.venv/
+**/__pycache__/
+**/*.pyc
+app/node_modules/
+app/dist/
+data/raw/
+outputs/
+notebooks/
+models/
+ml_packages/
+*.qgz
+*.qgz~
+*.log
